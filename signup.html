@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+
+  <title>Final Project</title>
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0" charset = "UTF-8" />
+  
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+    <!-- CDN link to SlickNav CSS  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+    
+    <!-- Link to your custom stylesheet -->
+    <link rel="stylesheet" href="signup.css">
+    
+
+    <!-- CDN link to jQuery (necessary for SlickNav jQuery to work -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    
+    <!-- CDN link to SlickNav jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+
+
+    
+<!-- 
+Note that in the below example, #menu is the ID I chose
+ to apply to my regular ul-based navbar, while #mobilemenu 
+ is the ID I assigned to the empty div I created as a 
+ placeholder for the Slicknav version of that menu. Make
+  sure your script contains the class/ID names that you 
+  used in your code.
+When this script is called, it will find your nav menu, 
+turn it into a Slicknav/hamburger menu version of that menu,
+ and attach it to the empty div. -->
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+          $("#menu").slicknav({
+              prependTo: "#mobilemenu"
+          });
+      });
+  </script>
+
+</head>
+<body class = "grid">
+  
+	<header>
+       <h1><span class = "bigger"> <i class="fas fa-dumbbell"></i> F.I.T.</span> <span class = "fit">Functional Individualized Training</span></h1>
+    
+    </header>
+
+    <menu>
+                <ul class = "row2">
+                    <li>
+                        <nav id = "mobilemenu">
+                            <nav id = "menu">
+                                <ul class = "menu">
+                                    <li class = "top">
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li class = "top">
+                                        <a href="signup.html">Sign Up</a>
+                                    </li>
+                                    <li class = "top">
+                                        <a href="index.html">About</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                       
+                        </nav>
+        
+                    </li>
+                    <li>
+                        <div class = "filler">The Premiere Workout Program for People with Special Needs</div>
+                    </li>
+                </ul>
+      
+    </menu>
+    <main>
+        <form method = "get" action = "">
+            <h2>Sign Up</h2>
+            <ul class = "format">
+                <li>
+                    <img src="https://bloximages.chicago2.vip.townnews.com/journalstar.com/content/tncms/assets/v3/editorial/0/4a/04a06ab6-4f59-5d1c-8b05-b9eda870ec50/5fa975f2e092f.preview.jpg?resize=1200%2C900" 
+                    alt="runner" class="runner">
+                </li>
+                <li>
+                    <ul class = "signup">
+                        <li class = "list">
+                            <label class = "box">
+                                First Name
+                            </label>
+                        </li>
+                        <li class = "list">
+                            <label> 
+                                <input type = "text" name = "First Name" placeholder = "name" class = "color" required = "">
+                            </label>
+                        </li>
+                        <li class = "list">
+                            <label class = "box">
+                                Last Name
+                            </label>
+                        </li>
+                        <li class = "list">
+                            <label> 
+                                <input type = "text" name = "Last Name" placeholder = "name" class = "color" required = "">
+                            </label>
+                        </li>
+                        <li class = "list">
+                            <label class = "box">
+                                Phone Number
+                            </label>
+                        </li>
+                        <li class = "list">
+                            <label>
+                                 <input type = "tel" name = "Phne Number" placeholder = "( )" class = "color" required = ""
+                                 pattern="[0-9]{10}"
+                                 required>
+                            </label>
+                        </li>
+                        <li class = "list">
+                            <label class = "box">
+                                Email
+                            </label>
+                        </li>
+                        <li class = "list">
+                            <label>
+                                <input type = "email" name = "email" placeholder = "email@example.com" class = "color" required = "">
+                            </label>
+                        </li>
+                        <li class = "list">
+                            <input type = "submit" placeholder = "Submit" class = "button-color">
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                                        
+                    <img src="https://www.gannett-cdn.com/presto/2020/05/14/USAT/77c7d231-43a1-43ba-9b65-86571c60e0f5-chris-2.jpg" 
+                    alt="olympian" class="olympian">
+                </li>
+            </ul>
+
+        </form>
+    </main>
+
+
+</body>
+</html>

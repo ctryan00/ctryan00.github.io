@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+
+  <title>Final Project</title>
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0" charset = "UTF-8" />
+  
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+    <!-- CDN link to SlickNav CSS  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+    
+    <!-- Link to your custom stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+
+    <!-- CDN link to jQuery (necessary for SlickNav jQuery to work -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    
+    <!-- CDN link to SlickNav jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+
+
+    
+<!-- 
+Note that in the below example, #menu is the ID I chose
+ to apply to my regular ul-based navbar, while #mobilemenu 
+ is the ID I assigned to the empty div I created as a 
+ placeholder for the Slicknav version of that menu. Make
+  sure your script contains the class/ID names that you 
+  used in your code.
+When this script is called, it will find your nav menu, 
+turn it into a Slicknav/hamburger menu version of that menu,
+ and attach it to the empty div. -->
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+          $("#menu").slicknav({
+              prependTo: "#mobilemenu"
+          });
+      });
+  </script>
+
+</head>
+<body class = "grid">
+  
+	<header>
+       <h1><span class = "bigger"> <i class="fas fa-dumbbell"></i> F.I.T.</span> <span class = "fit">Functional Individualized Training</span></h1>
+           \
+
+    </header>
+
+    <menu>
+                <ul class = "row2">
+                    <li>
+                        <nav id = "mobilemenu">
+                            <nav id = "menu">
+                                <ul class = "menu">
+                                    <li class = "top">
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li class = "top">
+                                        <a href="signup.html">Sign Up</a>
+                                    </li>
+                                    <li class = "top">
+                                        <a href="index.html">About</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                       
+                        </nav>
+        
+                    </li>
+                    <li>
+                        <div class = "filler">The Premiere Workout Program for People with Special Needs</div>
+                    </li>
+                </ul>
+      
+    </menu>
+    <main>
+        <div class = "card-titles">What is F.I.T.?</div>
+        <ul class = "left-bullet">
+            <li class = "first-list"><span class = "key-words">Personalized</span> online workout program for special needs users</li>
+            <li class = "first-list">Initial screening surveys to develop <span class = "key-words">best-fit</span> workouts</li>
+            <li class = "first-list">Workout <span class = "key-words">on you own time</span> following pre-recorded videos</li>
+            <li class = "first-list">Videos tailor to<span class = "key-words">functional mobility</span> (balance, stamina coordination)</li>
+            <li class = "first-list">Accounts <span class = "key-words">tracks progress</span> of calories burned, steps taken, & videos completed!</li>
+        </ul>
+    </main>
+    <section>
+        <div class = "card-titles">Demo Workout Routine</div>
+        <iframe width="355" height="200" class = "video" src="https://www.youtube.com/embed/1nrtK4Jxee8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
+    <aside>
+        <div class = "card-titles">Meet the Team</div>
+        <div class = "team">Our team consists of 5 current UNC students:
+            Calvin Ryan, Luis Castro, Kyndall Vaughan, Emmeline Berridge,
+            and Nicole DeBlois. Calvin is a sophomore from New Jersey, 
+            Emmeline is a sophomore from New York, Luis is a junior from 
+            the Philippines, Kyndall is a junior from North Carolina, and
+            Nicole is a sophomore from North Carolina.
+        </div>
+    </aside>
+
+
+    <footer>
+        <div class = "donate">Organizations to Support</div>
+        <div class = "bottom"><button type="button" class = "button" onclick="window.location.href='signup.html'">CLICK HERE TO ORDER NOW!</button>
+            <ul class = "bottom-list">
+                <li class = "second-list"><a href = "https://gigisplayhouse.org/raleigh/" target ="_blank">Gigi’s Playhouse Raleigh</a></li>
+                <li class = "second-list"><a href = "https://www.ncdsalliance.org/" target ="_blank">North Carolina Down Syndrome Alliance</a></li>
+                <li class = "second-list"><a href = "https://www.autismspeaks.org/carolinas" target ="_blank">Autism Speaks</a></li>
+            </ul>
+        </div>
+       
+       
+    </footer>
+</body>
+</html>
